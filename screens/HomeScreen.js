@@ -30,7 +30,7 @@ export default function HomeScreen({ navigation }) {
   const sincronizarReceitas = async () => {
     setCarregando(true);
     try {
-      const response = await fetch('https://raw.githubusercontent.com/Gabbyiel/Projeto-StartMobile-1/refs/heads/main/receitas.json');
+      const response = await fetch('https://github.com/Gabbyiel/Projeto-StartMobile-1/refs/heads/main/receitas.json');
       const receitasDoServidor = await response.json();
 
       const novas = receitasDoServidor.filter(resServidor =>
